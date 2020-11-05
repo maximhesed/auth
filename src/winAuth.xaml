@@ -1,0 +1,12 @@
+﻿<Window x:Class='Auth.src.winAuth' xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' xmlns:d='http://schemas.microsoft.com/expression/blend/2008' xmlns:mc='http://schemas.openxmlformats.org/markup-compatibility/2006' mc:Ignorable='d' Title='Auth' Height='150' MinHeight='150' MaxHeight='150' Width='196' MinWidth='196' WindowStartupLocation='CenterScreen' Loaded='Window_Loaded'>
+    <Grid>
+        <StackPanel>
+            <TextBox Margin='10 10 10 0' Height='20' VerticalContentAlignment='Center' x:Name='txtLogin' TextWrapping='Wrap' Text='login' TextAlignment='Center' FontFamily='Lucida Console' FontSize='10' Foreground='Silver' />
+            <TextBox Margin='10 5 10 0' Height='20' VerticalContentAlignment='Center' x:Name='txtPassw' TextWrapping='Wrap' Text='password' TextAlignment='Center' FontFamily='Lucida Console' FontSize='10' Foreground='Silver' />
+            <CheckBox Margin='5' x:Name='chkRemember' VerticalAlignment='Center' HorizontalAlignment='Center'>
+                <TextBlock Text='Remember me' />
+            </CheckBox>
+            <Button Margin='0 2 0 0' Height='20' x:Name='btnLogin' Content='log in' FontFamily='Lucida Console' FontSize='10' HorizontalAlignment='Center' Width='60' Click='btnLogin_Click' />
+        </StackPanel>
+    </Grid>
+</Window>
